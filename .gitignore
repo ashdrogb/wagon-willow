@@ -1,0 +1,19 @@
+.venv
+.env
+
+@"
+# Python
+venv/
+__pycache__/
+*.pyc
+backend/instance/*.db
+backend/.env
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+"@ | Out-File -Encoding utf8 .gitignore
