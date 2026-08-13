@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
+CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "http://localhost:5173").split(",")
+
 SESSION_COOKIE_SAMESITE = "None"
 SESSION_COOKIE_SECURE = True
 
