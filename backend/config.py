@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
+SESSION_COOKIE_SAMESITE = "None"
+SESSION_COOKIE_SECURE = True
 
 class Config:
     SECRET_KEY = os.environ.get("SECRET_KEY", "dev-key-change-me")
